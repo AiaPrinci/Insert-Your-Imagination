@@ -125,13 +125,10 @@ body {
     padding: 10px;
     background-color: #00000000;
     backdrop-filter: blur(8px);
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.new-element-container::-webkit-scrollbar {
-    display: none;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(36, 1, 68) #79757b;
+    height: 300px;
 }
 
 @media only screen and (max-width: 769px) {
@@ -141,7 +138,7 @@ body {
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         flex-direction: column;
         gap: 20px;
     }
